@@ -1,0 +1,76 @@
+/* Зовнішній CSS файл */
+/* Заголовок (HN) */
+h1 {
+    font-size: 24px;
+    color: navy !important;
+    font-weight: bold;
+    line-height: 1.5;
+    text-align: center;
+}
+
+/* Тіло (BODY) */
+body {
+    font-size: 16px;
+    color: #333;
+    line-height: 1.6;
+    text-align: justify;
+    background-color: lightblue;
+}
+
+/* Посилання */
+a {
+    color: #008080;
+}
+
+/* Перевизначення стилю для посилань */
+a:link,
+a:visited {
+    text-decoration: underline;
+}
+
+/* Абзац */
+p {
+    font-size: 18px;
+    color: #666;
+    line-height: 1.6;
+}
+
+/* Стилі для списків */
+ul {
+    color: green;
+}
+
+ol {
+    color: blue;
+}
+
+
+
+/* Стилі для таблиць */
+table {
+    width: 100%;
+    border-collapse: collapse;
+    margin-bottom: 20px;
+}
+
+th, td {
+    border: 1px solid #ddd;
+    padding: 8px;
+    text-align: center;
+}
+
+th {
+    background-color: lightgrey;
+}
+
+/* Стилі для плаваючого фрейму */
+.float-frame {
+    float: right;
+    width: 300px;
+    height: 200px;
+    margin-left: 20px;
+    border: 1px solid #ccc;
+    padding: 10px;
+    background-color: #f9f9f9;
+}
+
