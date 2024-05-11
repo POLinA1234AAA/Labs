@@ -211,3 +211,6 @@ h1 {
     z-index: -1;
     border-radius: 5px;
 }
+.product-card:hover {
+    border-color: #007bff; /* Новий колір рамки при наведенні */
+}
