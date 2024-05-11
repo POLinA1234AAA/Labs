@@ -116,3 +116,98 @@ th {
 tr:nth-child(even) {
     background-color: lightcoral; /* Колір фону для парних рядків */
 }
+
+/* Стилі CSS */
+
+/* Загальні стилі */
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+}
+
+/* Заголовок магазину */
+h1 {
+    text-align: center;
+    margin: 20px 0;
+}
+
+/* Контейнер для продуктів */
+.product-container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+}
+
+/* Карточка продукту */
+.product-card {
+    width: 200px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    margin: 10px;
+    padding: 10px;
+    text-align: center;
+    position: relative;
+}
+
+/* Зображення продукту */
+.product-image {
+    width: 100%;
+    border-radius: 5px;
+}
+
+/* Назва продукту */
+.product-name {
+    font-weight: bold;
+    margin: 5px 0;
+}
+
+/* Ціна продукту */
+.product-price {
+    color: green;
+    margin-bottom: 10px;
+}
+
+.product-image {
+    width: 300px;
+    height: 200px;
+    border-radius: 5px;
+}
+
+/* Посилання */
+.product-link {
+    text-decoration: none;
+    color: #333;
+}
+
+/* Посилання після карточки */
+.product-card::after {
+    content: "Переглянути";
+    display: block;
+    background-color: #007bff;
+    color: #fff;
+    padding: 5px;
+    border-radius: 5px;
+    position: absolute;
+    bottom: 5px;
+    left: 50%;
+    transform: translateX(-50%);
+}
+
+/* Псевдокласи для посилань */
+.product-link:hover {
+    color: #007bff;
+}
+
+/* Псевдоелементи :before та :after */
+.product-card::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(255, 255, 255, 0.7);
+    z-index: -1;
+    border-radius: 5px;
+}
