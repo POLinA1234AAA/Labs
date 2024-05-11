@@ -148,6 +148,7 @@ h1 {
     padding: 10px;
     text-align: center;
     position: relative;
+    float: left; /* Плаваючий блок */
 }
 
 /* Зображення продукту */
@@ -174,25 +175,25 @@ h1 {
     border-radius: 5px;
 }
 
-/* Посилання */
+ /*Посилання */
 .product-link {
     text-decoration: none;
     color: #333;
 }
 
-/* Посилання після карточки */
-.product-card::after {
-    content: "Переглянути";
-    display: block;
-    background-color: #007bff;
-    color: #fff;
-    padding: 5px;
-    border-radius: 5px;
-    position: absolute;
-    bottom: 5px;
-    left: 50%;
-    transform: translateX(-50%);
-}
+/*!* Посилання після карточки *!*/
+/*.product-card::after {*/
+/*    content: "Переглянути";*/
+/*    display: block;*/
+/*    background-color: #007bff;*/
+/*    color: #fff;*/
+/*    padding: 5px;*/
+/*    border-radius: 5px;*/
+/*    position: absolute;*/
+/*    bottom: 5px;*/
+/*    left: 50%;*/
+/*    transform: translateX(-50%);*/
+/*}*/
 
 /* Псевдокласи для посилань */
 .product-link:hover {
@@ -213,4 +214,26 @@ h1 {
 }
 .product-card:hover {
     border-color: #007bff; /* Новий колір рамки при наведенні */
+}
+/* Посилання*/
+.product-link {
+    text-decoration: none;
+    color: #333;
+}
+
+/* Псевдокласи для посилань */
+.product-link:link {
+    color: #333; /* Колір посилання */
+}
+
+.product-link:visited {
+    color: #666; /* Колір відвіданих посилань */
+}
+
+.product-link:hover {
+    color: #000; /* Колір посилання при наведенні курсора */
+}
+
+.product-link:active {
+    color: #FF0000; /* Колір посилання при натисканні */
 }
